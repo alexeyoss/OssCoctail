@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.OssCoctails" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/blue</item>
+
+        <item name="emojiCompatEnabled">false</item>
+
+        <item name="appBarLayoutStyle">@style/Widget.OssCoctails.AppBarLayout.Light</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/white</item>
+
+        <!--Buttons Style-->
+        <!--        <item name="floatingActionButtonStyle"></item>-->
+    </style>
+
+    <style name="Theme.OssCoctails" parent="Base.Theme.OssCoctails" />
+</resources>

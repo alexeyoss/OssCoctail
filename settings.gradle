@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "OssCoctails"
+include ':app'
+include ':core_ui'
+include ':core_ui:theme'
+include ':core_ui:presentation'
+include ':core'
+include ':core:common'
+include ':features'
+include ':services'
+include ':features:coctails_list'

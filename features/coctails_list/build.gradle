@@ -1,0 +1,32 @@
+plugins {
+    id "com.android.library"
+    id "org.jetbrains.kotlin.android"
+}
+
+android {
+
+    defaultConfig {
+        minSdk minAndroidSdk
+    }
+
+    namespace "ru.alexeyoss.features.coctails_list"
+    compileSdk targetAndroidSdk
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation libs.android.coreKtx
+    implementation libs.android.appCompat
+    implementation libs.android.constraintLayout
+    implementation libs.android.fragmentKtx
+    implementation libs.android.recyclerView
+
+    implementation libs.google.material
+
+    implementation project(Modules.Core.common)
+    implementation project(Modules.CoreUi.presentation)
+}

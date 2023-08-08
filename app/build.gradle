@@ -1,0 +1,74 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "kotlin-kapt"
+}
+
+android {
+    namespace "ru.alexeyoss.osscoctails"
+    compileSdkVersion targetAndroidSdk
+
+    defaultConfig {
+        applicationId "ru.alexeyoss.osscoctails"
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
+        versionCode appVersionCode
+        versionName appVesionName
+
+    }
+
+    buildTypes {
+
+        debug {
+//            manifestPlaceholders = [appIcon: "@mipmap/ic_launcher_debug"]
+
+            applicationIdSuffix ".beta"
+            ext.enableCrashlytics = false
+            minifyEnabled false
+            shrinkResources false
+        }
+
+
+        release {
+//            manifestPlaceholders = [appIcon: "@mipmap/ic_launcher_prod"]
+
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation libs.android.coreKtx
+    implementation libs.android.appCompat
+    implementation libs.android.constraintLayout
+
+    implementation libs.additionalstuff.timber
+
+    implementation libs.google.dagger
+    kapt libs.google.daggerCompiler
+
+    implementation libs.google.material
+
+    implementation project(Modules.Core.common)
+    implementation project(Modules.CoreUi.presentation)
+
+
+    implementation project(Modules.Features.coctails_list)
+
+
+}

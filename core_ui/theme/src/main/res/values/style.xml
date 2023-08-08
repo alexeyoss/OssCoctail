@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.OssCoctails.AppBarLayout.Light" parent="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+        <item name="background">?attr/colorPrimarySurface</item>
+        <item name="elevation">@dimen/zero_elevation</item>
+    </style>
+</resources>
