@@ -1,12 +1,17 @@
 plugins {
     id "com.android.library"
     id "org.jetbrains.kotlin.android"
+    id "kotlin-kapt"
 }
 
 android {
 
     defaultConfig {
         minSdk minAndroidSdk
+    }
+
+    kotlin {
+        jvmToolchain(jvmVersion)
     }
 
     namespace "ru.alexeyoss.features.coctails_list"
@@ -26,6 +31,11 @@ dependencies {
     implementation libs.android.recyclerView
 
     implementation libs.google.material
+
+    implementation libs.google.dagger
+    kapt libs.google.daggerCompiler
+
+    implementation libs.additionalstuff.glide
 
     implementation project(Modules.Core.common)
     implementation project(Modules.CoreUi.presentation)

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_for_adding_new_cocktail_desc">Button for adding new cocktail</string>
+    <string name="defaultPositiveBtnText">Да</string>
+    <string name="defaultRationalText">Для корректной работы нашего приложения мы используем ряд
+        пользовательских разрешений.</string>
+</resources>

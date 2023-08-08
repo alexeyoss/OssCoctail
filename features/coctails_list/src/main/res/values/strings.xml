@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="button_for_adding_new_cocktail_desc">Button for adding new cocktail</string>
+    <string name="list_title_text">My cocktails</string>
+    <string name="hint_text">Add your first \n
+        cocktail here</string>
 </resources>

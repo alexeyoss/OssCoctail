@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace "ru.alexeyoss.osscoctails"
-    compileSdkVersion targetAndroidSdk
+    compileSdk targetAndroidSdk
 
     defaultConfig {
         applicationId "ru.alexeyoss.osscoctails"
@@ -48,6 +48,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig true
     }
 }
 
@@ -59,6 +60,8 @@ dependencies {
 
     implementation libs.additionalstuff.timber
 
+    implementation libs.navigation.cicerone
+
     implementation libs.google.dagger
     kapt libs.google.daggerCompiler
 
@@ -67,8 +70,10 @@ dependencies {
     implementation project(Modules.Core.common)
     implementation project(Modules.CoreUi.presentation)
 
-
     implementation project(Modules.Features.coctails_list)
+
+    implementation project(Modules.Services.data)
+    implementation project(Modules.Services.storage)
 
 
 }

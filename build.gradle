@@ -18,6 +18,12 @@ buildscript {
         activityKtx_version = "1.7.2"
         lifecycle_version = "2.5.1"
 
+        /*Navigation*/
+        cicerone_version = "7.1"
+
+        /*DB*/
+        room_version = "2.4.3"
+
         /* Google */
         material_version = "1.8.0"
         dagger_version = "2.46.1"
@@ -43,13 +49,13 @@ buildscript {
                         theme       : ":core_ui:theme",
                 ],
                 Features: [
-                        coctails_list : ":features:coctails_list"
+                        coctails_list: ":features:coctails_list"
                 ],
                 Services: [
-
+                        data   : ":services:data",
+                        storage: ":services:storage"
                 ]
         ]
-
         libs = [
                 android        : [
                         coreKtx              : "androidx.core:core-ktx:$coreKtx_version",
@@ -68,6 +74,14 @@ buildscript {
                         daggerCompiler: "com.google.dagger:dagger-compiler:$dagger_version",
 
                 ],
+                db             : [
+                        room        : "androidx.room:room-runtime:$room_version",
+                        roomCompiler: "androidx.room:room-compiler:$room_version",
+                        roomKtx     : "androidx.room:room-ktx:$room_version",
+                ],
+                navigation     : [
+                        cicerone:  "com.github.terrakok:cicerone:$cicerone_version",
+                ],
                 network        : [
                         retrofit          : "com.squareup.retrofit2:retrofit:$retrofit_version",
                         gsonConverter     : "com.squareup.retrofit2:converter-gson:$retrofit_version",
@@ -85,6 +99,7 @@ buildscript {
                 ],
 
         ]
+
     }
 
 

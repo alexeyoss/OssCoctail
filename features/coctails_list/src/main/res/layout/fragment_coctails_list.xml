@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ru.alexeyoss.features.coctails_list.presentation.CoctailsListFragment"
+    tools:context="ru.alexeyoss.features.coctails_list.presentation.coctails.CoctailsListFragment"
     tools:theme="@style/Theme.OssCoctails">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/extra_large_margin"
         android:src="@drawable/emptylist_placeholder"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,21 +23,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/medium_margin"
-        android:text="My cocktails"
+        android:text="@string/list_title_text"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        android:textColor="?android:attr/textColorPrimary"
         app:emojiCompatEnabled="?attr/emojiCompatEnabled"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emptyListPlaceHolder"
-        tools:fontFamily="@font/didact_gothic"
-        tools:textSize="36sp" />
+        app:layout_constraintTop_toBottomOf="@id/emptyListPlaceHolder" />
 
 
-    <!--TODO overload layout_with to wrap_content-->
-    <include
-        layout="@layout/bottom_bar_layout"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/large_plus_margin"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_coctails_list"
+        tools:spanCount="2" />
+
+    <include
+        android:id="@+id/hint_text_bellow_fab"
+        layout="@layout/hint_text_bellow_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/button_for_adding_new_cocktail_desc"
+        android:scaleType="center"
+        android:layout_marginBottom="@dimen/large_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_plus"
+        app:tint="?attr/colorPrimary"
+        app:fabCustomSize="@dimen/smallComponentsCornerRadius"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

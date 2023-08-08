@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:backgroundTint="@color/black"
+    tools:theme="@style/Theme.OssCoctails">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        tools:src="@drawable/example_placeholder" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/coctail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/extra_large_margin"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColor="?attr/colorPrimary"
+        tools:text="Pink Lemonade" />
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -20,6 +20,8 @@
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/coctails_list" />
             <option value="$PROJECT_DIR$/services" />
+            <option value="$PROJECT_DIR$/services/data" />
+            <option value="$PROJECT_DIR$/services/storage" />
           </set>
         </option>
       </GradleProjectSettings>

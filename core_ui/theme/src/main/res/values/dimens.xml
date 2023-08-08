@@ -2,11 +2,14 @@
 <resources>
     <!--Common-->
     <dimen name="zero_dp_value">0dp</dimen>
+    <!--Corners-->
+    <dimen name="smallComponentsCornerRadius">80dp</dimen>
     <!-- Elevation -->
     <dimen name="zero_elevation">0dp</dimen>
     <!--Margins-->
     <dimen name="medium_margin">16dp</dimen>
     <dimen name="large_margin">20dp</dimen>
+    <dimen name="large_plus_margin">24dp</dimen>
     <dimen name="extra_large_margin">32dp</dimen>
     <!-- BottomBar with Fab -->
     <dimen name="fabCradleMargin">5dp</dimen>

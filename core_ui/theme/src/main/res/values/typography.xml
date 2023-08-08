@@ -1,2 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TextAppearance.OssCoctails.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">109sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">68sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">55sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.OssCoctails.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/didact_gothic</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/didact_gothic</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+</resources>

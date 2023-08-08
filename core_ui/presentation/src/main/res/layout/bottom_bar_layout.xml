@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_bar_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:theme="@style/Theme.OssCoctails">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="?attr/colorPrimary"
+            android:gravity="center"
+            android:visibility="visible"
+            app:addElevationShadow="true"
+            app:fabCradleMargin="@dimen/fabCradleMargin"
+            app:fabCradleRoundedCornerRadius="@dimen/zero_dp_value"
+            app:fabCradleVerticalOffset="@dimen/zero_dp_value" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

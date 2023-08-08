@@ -18,6 +18,9 @@ android {
 
 dependencies {
     implementation libs.android.appCompat
+    implementation libs.android.coreKtx
+    implementation libs.google.material
+
     implementation libs.android.lifecycleRuntimeKtx
 
     api project(Modules.CoreUi.theme)

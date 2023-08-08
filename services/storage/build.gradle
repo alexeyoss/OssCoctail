@@ -1,0 +1,41 @@
+plugins {
+    id "com.android.library"
+    id "org.jetbrains.kotlin.android"
+    id "kotlin-kapt"
+    id "kotlin-parcelize"
+}
+
+android {
+    namespace "ru.alexeyoss.services.storage"
+    compileSdk targetAndroidSdk
+
+
+    defaultConfig {
+        minSdk minAndroidSdk
+
+        buildConfigField "int", "DB_VERSION", "1"
+        buildConfigField "String", "DB_NAME", "\"COCTAILS\""
+    }
+
+    kotlin {
+        jvmToolchain(jvmVersion)
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation libs.coroutines.coroutinesCore
+
+    implementation libs.db.room
+    implementation libs.db.roomKtx
+    kapt libs.db.roomCompiler
+
+    implementation libs.google.dagger
+    kapt libs.google.daggerCompiler
+
+    implementation project(Modules.Core.common)
+
+}
