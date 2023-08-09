@@ -4,8 +4,8 @@ OssCocktail - отборочное задание **SURF SUMMER SCHOOL 2023**.<b
 
 ### Preview
 <p>
-  <img src="data/empty_cocktails_list.gif" width="32%"/>
-  <img src="data/cocktails_list.gif" width="32%"/>
+  <img src="preview/empty_cocktails_list.gif" width="32%"/>
+  <img src="preview/cocktails_list.gif" width="32%"/>
 </p>
 
 ## Feature implementation status (per screen)
@@ -44,7 +44,7 @@ OssCocktail - отборочное задание **SURF SUMMER SCHOOL 2023**.<b
   * [LifeCycle Viewmodel](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-viewmodel-ktx)
 
 ## Architecture
-// TODO show picture
+![picture](preview/arch_oss_cocktail.png)
 
 ## Conclusions
 1. Концентрируйся на требованиях, не стоит везде пытаться сделать хорошо. _"Удобнее"_, _"надёжнее"_ не всегда правильные слова , когда речь идёт о сжатых сроках.
