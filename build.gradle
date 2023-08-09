@@ -28,10 +28,6 @@ buildscript {
         material_version = "1.8.0"
         dagger_version = "2.46.1"
 
-        /* Network */
-        retrofit_version = "2.9.0"
-        okhttp_version = "4.11.0"
-
         /* Coroutines */
         coroutinesCore_Version = "1.7.1"
 
@@ -82,13 +78,6 @@ buildscript {
                 navigation     : [
                         cicerone:  "com.github.terrakok:cicerone:$cicerone_version",
                 ],
-                network        : [
-                        retrofit          : "com.squareup.retrofit2:retrofit:$retrofit_version",
-                        gsonConverter     : "com.squareup.retrofit2:converter-gson:$retrofit_version",
-                        okhttp            : "com.squareup.okhttp3:okhttp:$okhttp_version",
-                        loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$okhttp_version",
-                ],
-
                 coroutines     : [
                         coroutinesCore: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCore_Version",
                 ],
